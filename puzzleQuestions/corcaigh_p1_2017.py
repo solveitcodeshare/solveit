@@ -38,12 +38,9 @@ for mine in mineLocations:
             if (i >= 0 and j >= 0) and (i < rows and j < cols):
                 if (minesCountOutput[i][j] != 'x'):
                     #this location gets incremented
-
                     #print(mine[0],mine[1],"UPDATE ",i,j,minesCountOutput[i][j])
                     minesCountOutput[i][j] +=1
-
 #create outpurstring
-
 outputstring = ""
 for line in minesCountOutput:
     for i, a in enumerate(line):
